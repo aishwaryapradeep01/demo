@@ -4,6 +4,8 @@ WORKDIR /heregc
 
 COPY ./package.json /heregc/ 
 
+COPY ./.env /heregc/ 
+
 RUN npm install
 
 COPY . /heregc
